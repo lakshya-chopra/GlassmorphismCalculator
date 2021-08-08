@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;-webkit-tap-highlight-color: transparent;
+    color: #fff;
+}
+
+::selection{
+    color:#000000;
+    background: #a8d1ff;
+}
+body{
+    font-family: "Poppins",arial,sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+      }
+    50% {
+      background-position: 100% 50%;
+      }
+    100% {
+      background-position: 0% 50%;
+      }
+}
+
+
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items: center;   
+    margin-top: 20px;
+    width:100%;
+}
+
+.heading{
+    text-align: center;
+    margin-top:25px;
+}
+
+.calculator{
+    width:300px;
+    border-radius:15px;
+    height:495.45px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.value{
+    font-size: 2rem;
+    width:inherit;
+    outline:none;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height:120px;
+    padding:0 10px 0 10px;
+
+    background: transparent;
+    text-align: right;
+
+    border-bottom:1px solid rgba(255, 255, 255, 0.05);
+    border-right:1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+/*Buttons*/
+button{
+    width:75px;
+    height:75px;
+    font-size: 1.5rem;
+    border: none;
+    padding:0 20px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+button:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.all_clear , .clear{
+    width:150px ;
+}
+
+
+#cornermost_Btn1{
+    border-bottom-left-radius: 15px;
+}
+#cornermost_Btn2{
+    border-bottom-right-radius: 15px;
+}
+
+button:active{
+    background-color:#cdcdcd;
+    font-weight: 700;
+    font-size:2rem;
+}
+.operators:active{
+    font-size:2rem;
+    background:rgb(37, 35, 59);
+    font-weight: 700;
+}
+
+
+@media(max-width:340px){
+    .calculator{
+        width:200px;
+    }
+    button{
+        width: 50px;
+    }
+    .all_clear,.clear{
+        width:100px;
+    }
+
+}

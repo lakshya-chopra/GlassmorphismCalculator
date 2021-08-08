@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+<h1 class='heading'>Calculator</h1>
+
+<div class="wrapper">
+
+    <div class="calculator">
+
+        <input type="text" class="value" name="txt" value="">
+
+        <div id="keys" class='keys'>
+        <button class='all_clear' onclick="all_clear()">AC</button>
+
+        <button class="clear" onclick="clear_()">C</button>
+
+        <button class='numbers' onclick= "displayValue(9)">9</button>
+        <button class='numbers' onclick= "displayValue(8)">8</button>
+        <button class='numbers' onclick= "displayValue(7)">7</button>
+        <button class='operators' onclick= "displayValue('/')">/</button>
+
+        <button class='numbers' onclick= "displayValue(6)">6</button>
+        <button class='numbers' onclick= "displayValue(5)">5</button>
+        <button class='numbers' onclick= "displayValue(4)">4</button>
+        <button class='operators' onclick= "displayValue('*')">*</button>
+
+        <button class='numbers' onclick= "displayValue(3)">3</button>
+        <button class='numbers' onclick= "displayValue(2)">2</button>
+        <button class='numbers' onclick= "displayValue(1)">1</button>
+        <button class='operators' onclick= "displayValue('-')">-</button>
+
+        <button class='numbers' id='cornermost_Btn1' onclick= "displayValue(0)">0</button>
+        <button class='numbers' onclick= "displayValue('.')">.</button>
+        <button class='numbers' onclick = "result()">=</button>
+        <button class='operators' id='cornermost_Btn2' onclick="displayValue('+')">+</button>
+
+    </div>
+
+ </div>
+
+</div>
+    <script src='index.js'></script>
+
+</body>
+
+</html>
